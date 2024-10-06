@@ -1,0 +1,111 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url("./counter.jpg.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Main container styling */
+#main\ container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+  /* border: 20px solid; */
+  box-shadow: 3px 2px 14px 4px black;
+  background-image:linear-gradient(#D8E5D7,#A3BCB1, #7BBDBD) ;
+  
+}
+
+/* Counter heading */
+#counter {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  animation: slideIn 1s ease-out;
+}
+
+/* Count display styling */
+#count {
+  font-size: 4rem;
+  color: #4CAF50;
+  margin-bottom: 20px;
+  animation: popIn 0.5s ease-in-out;
+}
+
+/* Button styling */
+button {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effects */
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Reset button with distinct color */
+button:nth-child(3) {
+  background-color: #f44336;
+}
+
+button:nth-child(3):hover {
+  background-color: #d32f2f;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
